@@ -2,11 +2,11 @@ import {Component, Optional} from '@angular/core';
 import {MdDialog, MdDialogRef, MdSnackBar} from '@angular/material';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+//  selector: 'app-root',
+  templateUrl: './pruebas.component.html',
+  styleUrls: ['./pruebas.component.css']
 })
-export class AppComponent {
+export class PruebasComponent {
   isDarkTheme: boolean = false;
   lastDialogResult: string;
 
