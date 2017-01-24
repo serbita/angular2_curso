@@ -1,0 +1,98 @@
+--Angular2 indice
+https://github.com/AngularClass/awesome-angular2
+
+--Material Design
+--guia de estilos
+https://material.io/guidelines/components/lists-controls.html#
+--material2 oficial de google team
+https://github.com/angular/material2
+https://github.com/angular/material2/blob/master/guides/getting-started.md
+https://github.com/jelbourn/material2-app
+https://material2-app.firebaseapp.com/
+Theming your Angular Material app (https://github.com/angular/material2/blob/master/guides/theming.md)
+--md2
+https://www.npmjs.com/package/md2
+http://code.promactinfo.com/md2
+--angular2-mdl
+https://www.npmjs.com/package/angular2-mdl
+http://mseemann.io/angular2-mdl/
+--ng2-material
+https://www.npmjs.com/package/ng2-material
+--Ver este template, parece bueno
+https://themeforest.net/item/coreng-angular-2-material-design-admin-template/18691824
+--paginas de google como modelo material design
+https://sites.google.com/new/?authuser=0
+https://play.google.com/music/listen
+
+--Routing
+https://angular.io/docs/ts/latest/guide/router.html
+https://embed.plnkr.co/?show=preview
+
+--Leer
+https://cli.angular.io/
+http://www.dotnetjalps.com/2016/07/angular2-packages-sublime-text3.html
+https://angular.io/docs/ts/latest/cookbook/component-communication.html
+https://github.com/AngularClass/angular2-webpack-starter
+https://justindujardin.github.io/ng2-material/#/
+http://akveo.com/ng2-admin/#/pages/dashboard
+https://material.io/guidelines/components/grid-lists.html#
+
+-------------
+-- Angular 2
+-------------
+
+--//prueba con epante
+--instalacion (solo una vez)
+sudo npm install -g angular-cli
+ng new epanteAngular2Test
+cd epanteAngular2Test
+
+--instalar material design 2
+npm install --save @angular/material
+
+--levantar el server
+ng serve
+http://localhost:4200
+
+--poner la siguiente linea en el index.html para que levante iconos
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+--poner la siguiente linea en el styles.css para que levante el theming
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+
+
+--//Curso https://www.codeschool.com
+https://www.codeschool.com/courses/accelerating-through-angular-2
+Buscar y descargar todos los videos los videos que no son free con torrent
+
+--descargar los fuentes de los challenges
+--app 1 (anda bien)
+git clone https://github.com/Gregg/angular2_challenge_app.git
+--app 2
+git clone https://github.com/codeschool/WatchUsBuild-Angular2Final.git
+
+--instalar npm
+sudo curl -L https://www.npmjs.com/install.sh | sudo sh
+
+--instalar http-server
+sudo npm install http-server -g
+
+--ejecutar la app
+cd angular2_challenge_app
+http-server
+http://localhost:8080/angular2_challenge_app/
+
+
+--//Otros Cursos
+--videos
+http://www.codechannels.com/video/programmingwithmosh/angular/angular-2-tutorial-for-beginners-learn-angular-2-from-scratch/
+
+--src del primer video
+bit.ly/1X0El6t
+
+--Extraer el file, entrar a la carpeta y luego hacer
+npm install
+
+--Levantar la app
+npm start
+localhost:3000
