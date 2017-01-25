@@ -50,6 +50,9 @@ cd epanteAngular2Test
 --instalar material design 2
 npm install --save @angular/material
 
+--instalar hammerjs
+npm install --save hammerjs 
+
 --levantar el server
 ng serve
 http://localhost:4200
