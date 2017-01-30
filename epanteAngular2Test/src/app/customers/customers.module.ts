@@ -2,8 +2,8 @@ import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 import { FormsModule }    from '@angular/forms';
 
-import { CustomerListComponent }    from './customer-list.component';
-import { CustomerDetailComponent }  from './customer-detail.component';
+//import { CustomerListComponent }    from './customer-list.component';
+//import { CustomerDetailComponent }  from './customer-detail.component';
 
 import { CustomerService } from './customer.service';
 
@@ -16,8 +16,8 @@ import { CustomerService } from './customer.service';
     //,CustomerRoutingModule
   ],
   declarations: [
-    CustomerListComponent,
-    CustomerDetailComponent
+    //CustomerListComponent,
+    //CustomerDetailComponent
   ],
   providers: [
     CustomerService

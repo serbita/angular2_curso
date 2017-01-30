@@ -14,7 +14,7 @@ import { CanDeactivateGuard }       from './can-deactivate-guard.service';
 import { AuthGuard }                from './auth-guard.service';
 */
 
-import { SelectivePreloadingStrategy }   from './selective-preloading-strategy';
+//import { SelectivePreloadingStrategy }   from './selective-preloading-strategy';
 
 
 const appRoutes: Routes = [

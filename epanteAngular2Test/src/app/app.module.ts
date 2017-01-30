@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { AppRoutingModule }  from './app-routing.module';
 import { HomeModule }        from './home/home.module';
+import { CustomersModule }        from './customers/customers.module';
 
 //import { HomeComponent }          from './home/home.component';
 import { PruebasComponent }       from './pruebas/pruebas.component';
@@ -22,11 +23,14 @@ import 'hammerjs';
     MaterialModule.forRoot(),
     AppRoutingModule,
     HomeModule,
+    CustomersModule,
     FormsModule,
     HttpModule
   ],
-  declarations: [ AppComponent, DialogContent, PageNotFoundComponent, PruebasComponent, CustomerListComponent,
-                  CustomerDetailComponent],
+  declarations: [
+    AppComponent, DialogContent, PageNotFoundComponent, PruebasComponent 
+    , CustomerListComponent, CustomerDetailComponent 
+  ],
   entryComponents: [DialogContent],
   providers: [],
   bootstrap: [AppComponent]

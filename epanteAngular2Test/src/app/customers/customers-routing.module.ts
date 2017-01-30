@@ -1,3 +1,8 @@
+/*
+NO se usa. Lo usaría cuando si queremos que el modulo de customers tenga su propio routing
+
+
+
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -18,3 +23,4 @@ const customersRoutes: Routes = [
   ]
 })
 export class CustomerRoutingModule { }
+*/

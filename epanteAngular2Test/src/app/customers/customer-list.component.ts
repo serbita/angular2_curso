@@ -8,20 +8,18 @@ import { Customer, CustomerService }  from './customer.service';
 @Component({
 	template: `
 		<div class="app-content">
-
-		<h2>Customer List</h2>
-		<ul class="items">
-		   <li *ngFor="let customer of customers | async"
-		   [class.selected]="isSelected(customer)"
-		   (click)="onSelect(customer)">
-		   <span class="badge">{{ customer.id }}</span> {{ customer.name }}
-		   </li>
-		</ul>
-		<button routerLink="/sidekicks">Go to sidekicks</button>
+			<h2>Customer List</h2>
+			<ul class="items">
+			   <li *ngFor="let customer of customers | async"
+			   [class.selected]="isSelected(customer)"
+			   (click)="onSelect(customer)">
+			   <span class="badge">{{ customer.id }}</span> {{ customer.name }}
+			   </li>
+			</ul>
+			<button routerLink="/sidekicks">Go to sidekicks</button>
 		<div>
 
-	  <router-outlet></router-outlet>  
-
+  		<router-outlet></router-outlet>  
 
 		`,
 	providers: [CustomerService]
