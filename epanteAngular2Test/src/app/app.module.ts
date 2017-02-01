@@ -7,12 +7,14 @@ import { AppRoutingModule }  from './app-routing.module';
 import { HomeModule }        from './home/home.module';
 import { CustomersModule }        from './customers/customers.module';
 
-//import { HomeComponent }          from './home/home.component';
+import { AppComponent }           from './app.component';
+
 import { PruebasComponent }       from './pruebas/pruebas.component';
+import { DialogContent }          from './pruebas/pruebas.component';
+
 import { CustomerListComponent }  from './customers/customer-list.component';
 import { CustomerDetailComponent }  from './customers/customer-detail.component';
-import { AppComponent }           from './app.component';
-import { DialogContent }          from './app.component';
+
 import { PageNotFoundComponent }  from './not-found.component';
 
 import 'hammerjs';

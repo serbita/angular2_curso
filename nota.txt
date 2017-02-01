@@ -1,3 +1,7 @@
+-----------------
+-- Angular 2 DOC
+-----------------
+
 --Angular2 indice
 https://github.com/AngularClass/awesome-angular2
 
@@ -20,26 +24,33 @@ http://mseemann.io/angular2-mdl/
 https://www.npmjs.com/package/ng2-material
 --Ver este template, parece bueno
 https://themeforest.net/item/coreng-angular-2-material-design-admin-template/18691824
+--App hecha sobre material design. Tipo template
+http://akveo.com/ng2-admin/#/pages/dashboard
+https://akveo.github.io/ng2-admin/articles/013-create-new-page/
 --paginas de google como modelo material design
 https://sites.google.com/new/?authuser=0
 https://play.google.com/music/listen
 
+--Angular documentación oficial
+https://angular.io/docs/ts/latest/cookbook/component-communication.html
 --Routing
 https://angular.io/docs/ts/latest/guide/router.html
-https://embed.plnkr.co/?show=preview
+https://angular.io/resources/live-examples/router/ts/eplnkr.html
+https://angular-2-training-book.rangle.io/handout/routing/child_routes.html
+--Muy buen ejemplo de uso
+https://plnkr.co/edit/HX9LFuysyKmxAngv1nN3?p=preview
 
 --Leer
 https://cli.angular.io/
 http://www.dotnetjalps.com/2016/07/angular2-packages-sublime-text3.html
-https://angular.io/docs/ts/latest/cookbook/component-communication.html
 https://github.com/AngularClass/angular2-webpack-starter
 https://justindujardin.github.io/ng2-material/#/
-http://akveo.com/ng2-admin/#/pages/dashboard
 https://material.io/guidelines/components/grid-lists.html#
 
--------------
--- Angular 2
--------------
+
+-----------------
+-- Angular 2 APP
+-----------------
 
 --//prueba con epante
 --instalacion (solo una vez)
@@ -61,7 +72,6 @@ http://localhost:4200
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 --poner la siguiente linea en el styles.css para que levante el theming
 @import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
-
 
 
 --//Curso https://www.codeschool.com

@@ -1,3 +1,7 @@
+/*
+  NO lo estoy usando para nada por el momento
+*/
+
 import 'rxjs/add/observable/of';
 import { Injectable } from '@angular/core';
 import { PreloadingStrategy, Route } from '@angular/router';

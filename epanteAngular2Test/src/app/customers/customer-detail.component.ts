@@ -2,11 +2,7 @@ import 'rxjs/add/operator/switchMap';
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-//import { slideInDownAnimation } from '../animations';
-
 import { Customer, CustomerService }  from './customer.service';
-//import { Customer }  from './customer.service';
-
 
 @Component({
   template: `
@@ -24,15 +20,9 @@ import { Customer, CustomerService }  from './customer.service';
     </p>
   </div>
   
-  `//,  providers: [CustomerService],
-  //animations: [ slideInDownAnimation ]
+  `
 })
 export class CustomerDetailComponent implements OnInit {
-  
-/*  @HostBinding('@routeAnimation') routeAnimation = true;
-  @HostBinding('style.display')   display = 'block';
-  @HostBinding('style.position')  position = 'absolute';
-*/
   customer: Customer;
 
   constructor(

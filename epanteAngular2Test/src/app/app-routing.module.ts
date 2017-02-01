@@ -5,16 +5,14 @@ import { PageNotFoundComponent }    from './not-found.component';
 import { HomeComponent }            from './home/home.component';
 import { PruebasComponent }         from './pruebas/pruebas.component';
 import { CustomerListComponent }    from './customers/customer-list.component';
-import { CustomerDetailComponent }    from './customers/customer-detail.component';
+import { CustomerDetailComponent }  from './customers/customer-detail.component';
 
-
-/*import { CustomersComponent } from './customers.component';
+/*
 import { ComposeMessageComponent }  from './compose-message.component';
 import { CanDeactivateGuard }       from './can-deactivate-guard.service';
 import { AuthGuard }                from './auth-guard.service';
+import { SelectivePreloadingStrategy }   from './selective-preloading-strategy';
 */
-
-//import { SelectivePreloadingStrategy }   from './selective-preloading-strategy';
 
 
 const appRoutes: Routes = [
@@ -29,19 +27,10 @@ const appRoutes: Routes = [
       { path: 'otro', component: CustomerDetailComponent }
     ]
   },  
-/*
-  {
-    path: 'customers',
-    loadChildren: 'app/customers/customers.module#CustomersModule',
-    data: { preload: true }
-  },
-*/  
-
   { path: 'pruebas', component: PruebasComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },  
   { path: '**', component: PageNotFoundComponent }
- 
-   /*,
+/* 
   {
     path: 'compose',
     component: ComposeMessageComponent,
@@ -56,9 +45,7 @@ const appRoutes: Routes = [
     path: 'crisis-center',
     loadChildren: 'app/crisis-center/crisis-center.module#CrisisCenterModule',
     data: { preload: true }
-  },
-  { path: '',   redirectTo: '/heroes', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent }
+  }
 */  
 ];
 
