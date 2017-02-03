@@ -5,10 +5,14 @@
 --Angular2 indice
 https://github.com/AngularClass/awesome-angular2
 
+--Angular documentación oficial
+https://angular.io/docs/ts/latest/cookbook/component-communication.html
+
 --Material Design
 --guia de estilos
 https://material.io/guidelines/components/lists-controls.html#
 --material2 oficial de google team
+https://material.angular.io/
 https://github.com/angular/material2
 https://github.com/angular/material2/blob/master/guides/getting-started.md
 https://github.com/jelbourn/material2-app
@@ -31,8 +35,6 @@ https://akveo.github.io/ng2-admin/articles/013-create-new-page/
 https://sites.google.com/new/?authuser=0
 https://play.google.com/music/listen
 
---Angular documentación oficial
-https://angular.io/docs/ts/latest/cookbook/component-communication.html
 --Routing
 https://angular.io/docs/ts/latest/guide/router.html
 https://angular.io/resources/live-examples/router/ts/eplnkr.html
@@ -73,6 +75,8 @@ http://localhost:4200
 --poner la siguiente linea en el styles.css para que levante el theming
 @import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
 
+--//App ejemplo de alta baja CRUD
+https://github.com/loiane/angular2-crud-rest/tree/master/src/app/users
 
 --//Curso https://www.codeschool.com
 https://www.codeschool.com/courses/accelerating-through-angular-2
