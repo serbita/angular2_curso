@@ -3,15 +3,24 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
-import { AppRoutingModule }  from './app-routing.module';
+
+import { routing }  from './app.routing';
+
+import { UsersModule } from "./users/users.module";
+import { usersRouting } from "./users/users.routing";
+
 import { HomeModule }        from './home/home.module';
+import { homeRouting }        from './home/home.routing';
+
 import { CustomersModule }        from './customers/customers.module';
+import { customersRouting }        from './customers/customers.routing';
 
 import { AppComponent }           from './app.component';
 
-import { PruebasComponent }       from './pruebas/pruebas.component';
-import { DialogContent }          from './pruebas/pruebas.component';
+import { PruebasModule }        from './pruebas/pruebas.module';
+import { pruebasRouting } from "./pruebas/pruebas.routing";
 
+//TODO sacar los components de acá porque no deberían estar
 import { CustomerListComponent }  from './customers/customer-list.component';
 import { CustomerDetailComponent }  from './customers/customer-detail.component';
 
@@ -23,17 +32,28 @@ import 'hammerjs';
   imports: [
     BrowserModule,
     MaterialModule.forRoot(),
-    AppRoutingModule,
+
     HomeModule,
+    homeRouting,
+
     CustomersModule,
+    customersRouting,
+
     FormsModule,
-    HttpModule
+    HttpModule,
+
+    UsersModule,
+    usersRouting,
+
+    PruebasModule,
+    pruebasRouting,
+
+    routing    
   ],
   declarations: [
-    AppComponent, DialogContent, PageNotFoundComponent, PruebasComponent 
-    , CustomerListComponent, CustomerDetailComponent 
+    AppComponent, PageNotFoundComponent, CustomerListComponent, CustomerDetailComponent 
   ],
-  entryComponents: [DialogContent],
+  entryComponents: [],
   providers: [],
   bootstrap: [AppComponent]
 })
