@@ -8,9 +8,13 @@ https://github.com/AngularClass/awesome-angular2
 --Angular documentación oficial
 https://angular.io/docs/ts/latest/cookbook/component-communication.html
 
---Material Design
+-------------------
+--Material Design--
+-------------------
 --guia de estilos
 https://material.io/guidelines/components/lists-controls.html#
+
+--Componentes material design para angular2
 --material2 oficial de google team
 https://material.angular.io/
 https://github.com/angular/material2
@@ -18,12 +22,13 @@ https://github.com/angular/material2/blob/master/guides/getting-started.md
 https://github.com/jelbourn/material2-app
 https://material2-app.firebaseapp.com/
 Theming your Angular Material app (https://github.com/angular/material2/blob/master/guides/theming.md)
---md2
-https://www.npmjs.com/package/md2
-http://code.promactinfo.com/md2
 --angular2-mdl
 https://www.npmjs.com/package/angular2-mdl
 http://mseemann.io/angular2-mdl/
+Theming http://mseemann.io/angular2-mdl/theme
+--md2
+https://www.npmjs.com/package/md2
+http://code.promactinfo.com/md2
 --ng2-material
 https://www.npmjs.com/package/ng2-material
 --Ver este template, parece bueno
@@ -60,8 +65,18 @@ sudo npm install -g angular-cli
 ng new epanteAngular2Test
 cd epanteAngular2Test
 
---instalar material design 2
+--instalar material design hecho por mseemann.io
+npm install angular2-mdl --save
+--poner la siguiente linea en el index.html para que levante iconos
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css" />
+
+--instalar material design 2 hecho google
 npm install --save @angular/material
+--poner la siguiente linea en el styles.css para que levante el theming
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+--poner la siguiente linea en el index.html para que levante iconos
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 --instalar hammerjs
 npm install --save hammerjs 
@@ -70,10 +85,7 @@ npm install --save hammerjs
 ng serve
 http://localhost:4200
 
---poner la siguiente linea en el index.html para que levante iconos
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
---poner la siguiente linea en el styles.css para que levante el theming
-@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
 
 --//App ejemplo de alta baja CRUD
 https://github.com/loiane/angular2-crud-rest/tree/master/src/app/users

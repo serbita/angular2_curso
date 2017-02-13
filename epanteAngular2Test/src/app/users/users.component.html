@@ -1,3 +1,11 @@
+<!--mdl-table mdl-shadow="2" [table-model]="tableModel"></mdl-table>
+
+ <mdl-table-selectable mdl-shadow="2"
+       [table-model]="tableModel"
+       [table-model-selected]="selected"
+       (table-model-selectionChanged)="selectionChanged($event)">
+   </mdl-table-selectable-->
+
 <p>
   Displaying {{ users.length }} users.
 </p>
@@ -30,9 +38,17 @@
   </tbody>
 </table>
 
-<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+<!--div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
   <a class="btn-floating btn-large waves-effect waves-light green"
      routerLink="/users/new">
     <i class="material-icons">add</i>
   </a>
-</div>
+</div-->
+
+<!-- Action Buttons -->
+<span class="app-action">
+  <!--button md-fab><md-icon>add</md-icon></button-->
+
+  <a md-fab routerLink="/users/new"><md-icon>add</md-icon></a>
+
+</span>

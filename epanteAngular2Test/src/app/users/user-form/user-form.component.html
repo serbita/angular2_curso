@@ -1,4 +1,42 @@
-<h5>{{ title }}</h5>
+<div class="app-content">
+
+<md-card class="app-input-section">
+
+  <md-card-header>
+    <md-card-title>{{ title }}</md-card-title>
+  </md-card-header>
+
+  <form materialize class="example-form" [formGroup]="form" (ngSubmit)="save()">
+
+    <md-card-content>
+
+      <md-input-container class="example-full-width">
+        <input md-input placeholder="Company (disabled)" disabled value="Google">
+      </md-input-container>
+      
+      <md-input-container class="example-full-width">
+        <input md-input placeholder="Name" value="se" [(ngModel)]="user.name" id="name" formControlName="name" [class.invalid]="form.controls['name'].touched && !form.controls['name'].valid" required>
+      </md-input-container>
+
+      <md-input-container class="example-full-width">
+        <input md-input type="email" placeholder="email" value="email@gmail.com" [(ngModel)]="user.email" formControlName="email">
+        <md-hint align="start">"Este es un hintLabel"</md-hint>
+      </md-input-container>
+
+    </md-card-content>
+
+    <md-card-actions style="margin-left:0px">
+      <button md-raised-button type="submit" color="primary" [disabled]="!form.valid">Save</button>
+      <button md-raised-button [routerLink]="['/users']">Cancel</button>
+    </md-card-actions>
+
+  </form>
+
+</md-card>
+
+</div> <!-- class="app-content" -->
+
+<!--
 <div class="row">
   <form materialize class="col s12" [formGroup]="form" (ngSubmit)="save()">
     <div class="row">
@@ -82,3 +120,66 @@
     </button>
   </form>
 </div>
+-->
+
+<!--
+<form class="example-form">
+  <md-input-container class="example-full-width">
+    <input md-input placeholder="Company (disabled)" disabled value="Google">
+  </md-input-container>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><md-input-container class="example-full-width">
+      <input md-input placeholder="First name">
+    </md-input-container></td>
+    <td><md-input-container class="example-full-width">
+      <input md-input placeholder="Long Last Name That Will Be Truncated">
+    </md-input-container></td>
+  </tr></table>
+
+  <p>
+    <md-input-container class="example-full-width">
+      <textarea md-input placeholder="Address">1600 Amphitheatre Pkwy</textarea>
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <textarea md-input placeholder="Address 2"></textarea>
+    </md-input-container>
+  </p>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><md-input-container class="example-full-width">
+      <input md-input placeholder="City">
+    </md-input-container></td>
+    <td><md-input-container class="example-full-width">
+      <input md-input placeholder="State">
+    </md-input-container></td>
+    <td><md-input-container class="example-full-width">
+      <input md-input #postalCode maxlength="5" placeholder="Postal Code" value="94043">
+      <md-hint align="end">{{postalCode.value.length}} / 5</md-hint>
+    </md-input-container></td>
+  </tr></table>
+</form>
+
+    <md-card class="app-input-section">
+      <md-input placeholder="First name"></md-input>
+
+      <md-input #nickname placeholder="Nickname" maxlength="50">
+        <md-hint align="end">
+          {{nickname.characterCount}} / 50
+        </md-hint>
+      </md-input>
+
+      <md-input>
+        <md-placeholder>
+          <i class="material-icons app-input-icon">android</i> Favorite phone
+        </md-placeholder>
+      </md-input>
+
+      <md-input placeholder="Motorcycle model">
+        <span md-prefix>
+          <i class="material-icons app-input-icon">motorcycle</i>
+          &nbsp;
+        </span>
+      </md-input>
+    </md-card>
+-->

@@ -3,6 +3,7 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { MaterialModule } from '@angular/material';
 import { FormsModule }    from '@angular/forms';
 import { CommonModule }   from '@angular/common';
+//import { MdlModule }      from 'angular2-mdl';
 
 import { PruebasComponent }  from './pruebas.component';
 import { DialogContent }     from './pruebas.component';
@@ -13,6 +14,7 @@ import { DialogContent }     from './pruebas.component';
     MaterialModule.forRoot(),
     CommonModule,
     FormsModule
+    //,    MdlModule    
   ],
   declarations: [
     PruebasComponent,

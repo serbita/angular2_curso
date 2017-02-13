@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
+import { MdlModule } from 'angular2-mdl';
+
 import { routing }  from './app.routing';
 
 import { UsersModule } from "./users/users.module";
@@ -48,10 +50,12 @@ import 'hammerjs';
     PruebasModule,
     pruebasRouting,
 
-    routing    
+    MdlModule,
+
+    routing
   ],
   declarations: [
-    AppComponent, PageNotFoundComponent, CustomerListComponent, CustomerDetailComponent 
+    AppComponent, PageNotFoundComponent, CustomerListComponent, CustomerDetailComponent
   ],
   entryComponents: [],
   providers: [],

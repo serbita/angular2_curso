@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule }  from '@angular/router';
 import { HttpModule }  from '@angular/http';
+import { MaterialModule } from '@angular/material';
 
 import { UsersComponent } from './users.component';
 import { UsersService } from './shared/users.service';
@@ -11,6 +12,7 @@ import { UserFormComponent } from './user-form/user-form.component';
 @NgModule({
   imports: [
     CommonModule,
+    MaterialModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
