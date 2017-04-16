@@ -2,6 +2,11 @@
 -- Angular 2 DOC
 -----------------
 
+https://augury.angular.io/
+
+PWA progress web applications
+
+
 --Angular2 indice
 https://github.com/AngularClass/awesome-angular2
 
